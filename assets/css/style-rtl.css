@@ -1,0 +1,19 @@
+/*
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.btn.btn-icon.scroll-top {
+  border-radius: 50%;
+}
+table th {
+  text-align: start;
+}
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  text-align: start;
+}
+/* .main-menu .main-menu-content.ps {
+  overflow-y: auto !important;
+} */

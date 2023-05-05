@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html
+  class="loading semi-dark-layout"
+  lang="en"
+  data-layout="semi-dark-layout"
+  data-textdirection="rtl"
+>
+  <!-- BEGIN: Head-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui"
+    />
+    <meta
+      name="description"
+      content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities."
+    />
+    <meta
+      name="keywords"
+      content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app"
+    />
+    <meta name="author" content="PIXINVENT" />
+    <title>Blog List - Vuexy - Bootstrap HTML admin template</title>
+    <link
+      rel="apple-touch-icon"
+      href="../../../app-assets/images/ico/apple-icon-120.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../app-assets/images/ico/favicon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+      rel="stylesheet"
+    />
+
+    <!-- BEGIN: Vendor CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/vendors/css/vendors-rtl.min.css"
+    />
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/bootstrap-extended.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/colors.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/components.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/dark-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/bordered-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/semi-dark-layout.css"
+    />
+
+    <!-- BEGIN: Page CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/pages/page-blog.css"
+    />
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/custom-rtl.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../assets/css/style-rtl.css"
+    />
+    <!-- END: Custom CSS-->
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+
+  <body
+    class="vertical-layout vertical-menu-modern navbar-floating footer-static"
+    data-open="click"
+    data-menu="vertical-menu-modern"
+    data-col=""
+  >
+    <!-- BEGIN: Header-->
+    <nav
+      class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl"
+    >
+      <div class="navbar-container d-flex content">
+        <div class="bookmark-wrapper d-flex align-items-center">
+          <ul class="nav navbar-nav d-xl-none">
+            <li class="nav-item">
+              <a class="nav-link menu-toggle" href="#"
+                ><i class="ficon" data-feather="menu"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav align-items-center ms-auto">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link nav-link-style"
+              ><i class="ficon" data-feather="moon"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-auth-login.html"
+              ><i class="ficon" data-feather="power"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div
+      class="main-menu menu-fixed menu-dark menu-accordion menu-shadow"
+      data-scroll-to-active="true"
+    >
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item me-auto">
+            <a
+              class="navbar-brand"
+              href="../../../html/rtl/vertical-menu-template-semi-dark/index.html"
+              >
+              <h2 class="brand-text">الرئيسيه</h2>
+            </a>
+          </li>
+          <li class="nav-item nav-toggle">
+            <a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"
+              ><i
+                class="d-block d-xl-none text-primary toggle-icon font-medium-4"
+                data-feather="x"
+              ></i
+              ><i
+                class="d-none d-xl-block collapse-toggle-icon font-medium-4 text-primary"
+                data-feather="disc"
+                data-ticon="disc"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <div class="main-menu-content">
+        <ul
+          class="navigation navigation-main"
+          id="main-menu-navigation"
+          data-menu="menu-navigation"
+        >
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="index.html"
+              ><i data-feather="home"></i
+              ><span class="menu-title text-truncate" data-i18n="Dashboards"
+                >Dashboards</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="grid"></i
+              ><span class="menu-title text-truncate" data-i18n="category"
+                >Category</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="add-new-category.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="List"
+                    >add new category</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="view-category.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >View category</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="#"
+                  ><i data-feather="circle"></i
+                  ><span
+                    class="menu-item text-truncate"
+                    data-i18n="Second Level"
+                    >sub category</span
+                  ></a
+                >
+                <ul class="menu-content">
+                  <li>
+                    <a class="d-flex align-items-center" href="sub-category-add.html"
+                      ><span
+                        class="menu-item text-truncate"
+                        data-i18n="Third Level"
+                        >add sub category</span
+                      ></a
+                    >
+                  </li>
+                  <li class="active">
+                    <a class="d-flex align-items-center" href="sub-category-view.html"
+                      ><span
+                        class="menu-item text-truncate"
+                        data-i18n="Third Level"
+                        >view sub category</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-header">
+            <span data-i18n="User Interface">User Interface</span
+            ><i data-feather="more-horizontal"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="content-overlay"></div>
+      <div class="header-navbar-shadow"></div>
+      <div class="content-wrapper container-xxl p-0">
+        <div class="content-body">
+          <!-- sub category -->
+          <section id="sub-category">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title">sub category</h4>
+                  </div>
+                  <div class="card-body">
+                    <!-- Categories -->
+                    <div class="blog-categories mt-1">
+                      <h6 class="section-label">Categories</h6>
+                      <div class="mt-1">
+                        <table style="border-spacing: 0 0.5em; border-collapse:separate; ">
+                          <tbody>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-info rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="hash"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">id</div>
+                                </div>
+                              </td>
+                              <td><strong>1</strong></td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-primary rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="edit-2"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">name</div>
+                                </div>
+                              </td>
+                              <td>name</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-primary rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="edit-2"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">الاسم</div>
+                                </div>
+                              </td>
+                              <td>الاسم</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-warning rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="percent"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">measurement unit</div>
+                                </div>
+                              </td>
+                              <td>unit</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-success rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="image"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="blog-category-title text-body">
+                                    الصورة
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="" style="max-width: 250px">
+                                  <img
+                                    src="../../../app-assets/images/pages/calendar-illustration.png"
+                                    alt="Calendar illustration"
+                                    class="img-fluid"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-danger rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="file-text"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">وصف المنتج</div>
+                                </div>
+                              </td>
+                              <td>الوصف</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--/ Categories -->
+                  </div>
+                </div>
+              </div>
+              <!-- parent category card -->
+              <div class="col-md-6 col-12">
+                <div class="card card-transaction">
+                  <div class="card-header">
+                    <h4 class="card-title">parent category</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="transaction-item">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="avatar bg-light-success rounded">
+                          <div class="avatar-content">
+                            <i
+                              data-feather="arrow-up"
+                              class="avatar-icon font-medium-3"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="align-items-center">
+                          <a class="d-flex align-items-center" href="#">
+                            <h6 class="transaction-title">parent category</h6>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transaction-item">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="avatar bg-light-success rounded">
+                          <div class="avatar-content">
+                            <i
+                              data-feather="arrow-up"
+                              class="avatar-icon font-medium-3"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="align-items-center">
+                          <a class="d-flex align-items-center" href="#">
+                            <h6 class="transaction-title">parent category</h6>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- parent category card -->
+              <!-- sub category card -->
+              <div class="col-md-6 col-12">
+                <div class="card card-transaction">
+                  <div class="card-header">
+                    <h4 class="card-title">sub category</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="transaction-item">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="avatar bg-light-success rounded">
+                          <div class="avatar-content">
+                            <i
+                              data-feather="arrow-down"
+                              class="avatar-icon font-medium-3"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="align-items-center">
+                          <a class="d-flex align-items-center" href="#">
+                            <h6 class="transaction-title">sub category</h6>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transaction-item">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="avatar bg-light-success rounded">
+                          <div class="avatar-content">
+                            <i
+                              data-feather="arrow-down"
+                              class="avatar-icon font-medium-3"
+                            ></i>
+                          </div>
+                        </div>
+                        <div class="align-items-center">
+                          <a class="d-flex align-items-center" href="#">
+                            <h6 class="transaction-title">sub category</h6>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- sub category card -->
+            </div>
+          </section>
+          <!-- sub category -->
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    
+    <button class="btn btn-primary btn-icon scroll-top" type="button">
+      <i data-feather="arrow-up"></i>
+    </button>
+    <!-- END: Footer-->
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+    <script>
+      $(window).on("load", function () {
+        if (feather) {
+          feather.replace({
+            width: 14,
+            height: 14,
+          });
+        }
+      });
+    </script>
+  </body>
+  <!-- END: Body-->
+</html>

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html
+  class="loading semi-dark-layout"
+  lang="en"
+  data-layout="semi-dark-layout"
+  data-textdirection="rtl"
+>
+  <!-- BEGIN: Head-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui"
+    />
+    <meta
+      name="description"
+      content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities."
+    />
+    <meta
+      name="keywords"
+      content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app"
+    />
+    <meta name="author" content="PIXINVENT" />
+    <title>Blog List - Vuexy - Bootstrap HTML admin template</title>
+    <link
+      rel="apple-touch-icon"
+      href="../../../app-assets/images/ico/apple-icon-120.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../../../app-assets/images/ico/favicon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+      rel="stylesheet"
+    />
+
+    <!-- BEGIN: Vendor CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/vendors/css/vendors-rtl.min.css"
+    />
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/bootstrap-extended.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/colors.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/components.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/dark-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/bordered-layout.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/themes/semi-dark-layout.css"
+    />
+
+    <!-- BEGIN: Page CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/pages/page-blog.css"
+    />
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../app-assets/css-rtl/custom-rtl.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../assets/css/style-rtl.css"
+    />
+    <!-- END: Custom CSS-->
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+
+  <body
+    class="vertical-layout vertical-menu-modern navbar-floating footer-static"
+    data-open="click"
+    data-menu="vertical-menu-modern"
+    data-col=""
+  >
+    <!-- BEGIN: Header-->
+    <nav
+      class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl"
+    >
+      <div class="navbar-container d-flex content">
+        <div class="bookmark-wrapper d-flex align-items-center">
+          <ul class="nav navbar-nav d-xl-none">
+            <li class="nav-item">
+              <a class="nav-link menu-toggle" href="#"
+                ><i class="ficon" data-feather="menu"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav align-items-center ms-auto">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link nav-link-style"
+              ><i class="ficon" data-feather="moon"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-auth-login.html"
+              ><i class="ficon" data-feather="power"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div
+      class="main-menu menu-fixed menu-dark menu-accordion menu-shadow"
+      data-scroll-to-active="true"
+    >
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row" style="justify-content: end">
+          <li class="nav-item nav-toggle">
+            <a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"
+              ><i
+                class="d-block d-xl-none text-primary toggle-icon font-medium-4"
+                data-feather="x"
+              ></i
+              ><i
+                class="d-none d-xl-block collapse-toggle-icon font-medium-4 text-primary"
+                data-feather="disc"
+                data-ticon="disc"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <div class="main-menu-content">
+        <ul
+          class="navigation navigation-main"
+          id="main-menu-navigation"
+          data-menu="menu-navigation"
+        >
+          <li class="nav-item active">
+            <a class="d-flex align-items-center" href="index.html"
+              ><i data-feather="home"></i
+              ><span class="menu-title text-truncate" data-i18n="Dashboards"
+                >Dashboards</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="grid"></i
+              ><span class="menu-title text-truncate" data-i18n="category"
+                >Category</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="add-new-category.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="List"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="view-category.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >View</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="bold"></i
+              ><span class="menu-title text-truncate" data-i18n="brand"
+                >brand</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="brand-add.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="List"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="brand-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >View</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="underline"></i
+              ><span class="menu-title text-truncate" data-i18n="measurement"
+                >measurement unit</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="measurement-unit-add.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="List"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="measurement-unit-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >View</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="measurement-unit-conversion.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >unit conversion</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="measurement-unit-import.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >import</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="shopping-bag"></i
+              ><span class="menu-title text-truncate" data-i18n="product"
+                >product</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="product-add.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="List"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="product-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="product-list.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >product-list</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="product-import.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >import</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="product-per-stores-1.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >product per stores</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="View-product-discount.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >product discounts</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="View-product-rating-1.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >product rating</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="product-top-selling.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >product top selling</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="user"></i
+              ><span class="menu-title text-truncate" data-i18n="customer"
+                >customer</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="customer-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >View</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="users"></i
+              ><span class="menu-title text-truncate" data-i18n="customer"
+                >customer group</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="customer-group-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="customer-group-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="divide"></i
+              ><span class="menu-title text-truncate" data-i18n="discount"
+                >discount rule</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="discount-rule-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="discount-rule-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="assign-discount-rule.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >assign discount rule</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="user"></i
+              ><span class="menu-title text-truncate" data-i18n="supplier"
+                >supplier</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="supplier-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="supplier-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="supplier-pending.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >supplier pending</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="user"></i
+              ><span class="menu-title text-truncate" data-i18n="merchant"
+                >merchant</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="merchant-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="merchant-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="merchant-pending.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >merchant pending</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="git-branch"></i
+              ><span class="menu-title text-truncate" data-i18n="branch"
+                >branch</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="branch-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="branch-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="branch-single-view-updated.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >updated</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="chevrons-left"></i
+              ><span class="menu-title text-truncate" data-i18n="role"
+                >role</span
+              ></a
+            >
+            <!-- <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="branch-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="branch-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="branch-single-view-updated.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >updated</span
+                  ></a
+                >
+              </li>
+            </ul> -->
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="user"></i
+              ><span class="menu-title text-truncate" data-i18n="admin"
+                >admin</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="admin-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="admin-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="d-flex align-items-center"
+              href="supplier’s-Application-fees-1.html"
+              ><i data-feather="database"></i
+              ><span class="menu-title text-truncate" data-i18n="fee"
+                >supplier app fees</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="map"></i
+              ><span class="menu-title text-truncate" data-i18n="admin"
+                >cities</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="city-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="city-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="#"
+              ><i data-feather="map"></i
+              ><span class="menu-title text-truncate" data-i18n="area"
+                >area</span
+              ></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a class="d-flex align-items-center" href="area-create.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >add</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="area-view.html"
+                  ><i data-feather="circle"></i
+                  ><span class="menu-item text-truncate" data-i18n="View"
+                    >view</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="d-flex align-items-center"
+              href="View-application-dues-1.html"
+              ><i data-feather="database"></i
+              ><span class="menu-title text-truncate" data-i18n="area"
+                >application dues</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="d-flex align-items-center"
+              href="View-application-dues.html"
+              ><i data-feather="database"></i
+              ><span class="menu-title text-truncate" data-i18n="area"
+                >application dues</span
+              ></a
+            >
+          </li>
+          <li class="navigation-header">
+            <span data-i18n="User Interface">page content</span
+            ><i data-feather="more-horizontal"></i>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="contact-us.html"
+              ><i data-feather="phone-call"></i
+              ><span class="menu-title text-truncate" data-i18n="Contact us "
+                >Contact us
+              </span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="terms-conditions.html"
+              ><i data-feather="align-center"></i
+              ><span class="menu-title text-truncate" data-i18n="Contact us "
+                >Terms & conditions
+              </span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="d-flex align-items-center" href="about-us.html"
+              ><i data-feather="info"></i
+              ><span class="menu-title text-truncate" data-i18n="Contact us "
+                >About app
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="content-overlay"></div>
+      <div class="header-navbar-shadow"></div>
+      <div class="content-wrapper container-xxl p-0">
+        <div class="content-body">
+          <!-- supplier -->
+          <section id="supplier">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title">supplier</h4>
+                  </div>
+                  <div class="card-body">
+                    <!-- supplier -->
+                    <div class="blog-categories mt-1">
+                      <h6 class="section-label">supplier</h6>
+                      <div class="mt-1">
+                        <table
+                          style="
+                            border-spacing: 0 0.5em;
+                            border-collapse: separate;
+                          "
+                        >
+                          <tbody>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-info rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="hash"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">id</div>
+                                </div>
+                              </td>
+                              <td><strong>1</strong></td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-primary rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="edit-2"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">name</div>
+                                </div>
+                              </td>
+                              <td>name</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-primary rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="edit-2"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">city</div>
+                                </div>
+                              </td>
+                              <td>egypt</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-primary rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="edit-2"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">area</div>
+                                </div>
+                              </td>
+                              <td>egypt</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-warning rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="percent"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">
+                                    Defining categories:
+                                  </div>
+                                </div>
+                              </td>
+                              <td>category1 category2</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-warning rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="percent"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">
+                                    official documentations
+                                  </div>
+                                </div>
+                              </td>
+                              <td><a href="#" target="_blank">link</a></td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-warning rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="percent"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">
+                                    supplier admin user
+                                  </div>
+                                </div>
+                              </td>
+                              <td>yes</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-2">
+                                <div
+                                  class="d-flex justify-content-start align-items-center"
+                                >
+                                  <div
+                                    class="avatar bg-light-warning rounded me-75"
+                                  >
+                                    <div class="avatar-content">
+                                      <i
+                                        data-feather="percent"
+                                        class="avatar-icon font-medium-1"
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <div class="text-body">status</div>
+                                </div>
+                              </td>
+                              <td>active</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--/ supplier -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- product -->
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+
+    <button class="btn btn-primary btn-icon scroll-top" type="button">
+      <i data-feather="arrow-up"></i>
+    </button>
+    <!-- END: Footer-->
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+    <script>
+      $(window).on("load", function () {
+        if (feather) {
+          feather.replace({
+            width: 14,
+            height: 14,
+          });
+        }
+      });
+    </script>
+  </body>
+  <!-- END: Body-->
+</html>
