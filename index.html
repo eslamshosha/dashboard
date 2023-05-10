@@ -22,12 +22,25 @@
         text-align: center;
       }
       .anocor-cont a {
-        font-size: 24px;
-        font-weight: 700;
-        transition: all 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        font-size: 20px;
+        aspect-ratio: 1;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        border: 2px solid transparent;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
       }
       .anocor-cont a:hover {
-        color: blue;
+        color: #000;
+        border-color: #000;
       }
       .anocor-cont div {
         display: flex;
@@ -41,16 +54,11 @@
       <div class="anocor-cont">
         <div>
           <h1>login</h1>
-          <a href="starter-kit/rtl/dashboard/page-auth-login.html">
-            login-template</a
-          >
-          <a href="starter-kit/rtl/dashboard/page-auth-reset-password.html">
-            reset-password-template</a
-          >
+          <a href="starter-kit/rtl/dashboard/page-auth-login.html"> login</a>
         </div>
         <div>
           <h1>dashboard</h1>
-          <a href="starter-kit/rtl/dashboard/index.html"> dashboard-template</a>
+          <a href="starter-kit/rtl/dashboard/index.html"> dashboard</a>
         </div>
       </div>
     </div>
